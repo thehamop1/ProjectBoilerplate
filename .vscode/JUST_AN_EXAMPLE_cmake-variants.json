@@ -1,0 +1,8 @@
+{
+    "buildType": {
+      "default": "Debug",
+      "description": "Build Type Selection",
+      "choices": {
+      }
+    }
+  }
