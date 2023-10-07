@@ -3,6 +3,15 @@
       "default": "Debug",
       "description": "Build Type Selection",
       "choices": {
+        "Raspberry Pi: Debug": {
+          "short": "RPI Debug",
+          "long": "Build with debugging information",
+          "buildType": "Debug",
+          "settings": {
+            "CMAKE_INSTALL_PREFIX": "/home/thehamop/share",
+            "CMAKE_TOOLCHAIN_FILE": "${workspaceFolder}/cmake/armv8-rpi3-gnueabihf.cmake"
+          }
+        }
       }
     }
   }

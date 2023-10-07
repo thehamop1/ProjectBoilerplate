@@ -19,6 +19,9 @@
         - Install C++ extension package
         - Configure the project within the cmake extension and compile
         - You can also debug from the main menu now
+    - Options to run
+      - Run binaries directly from build/bin
+      - Run from vscode using gdb from the play button and add more launch options from .vscode/launch.json
 
 ## Project layout
     - .vscode/
