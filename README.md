@@ -26,6 +26,7 @@
     - Generate documentation:
       - doxygen doxyfile
       - Edit the mainpage.md in order to change the homepage for your project the docs can be accessed with ./docs/html/index.html
+    - CI support can be edited in the .github folder and will be run by github actions
 
 ## Project layout
     - .vscode/
