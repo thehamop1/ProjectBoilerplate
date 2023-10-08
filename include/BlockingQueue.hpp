@@ -1,6 +1,7 @@
 #pragma once
 #include <mutex>
 #include <queue>
+#include <concepts>
 
 template<typename T>
 class BlockingQueue{
@@ -13,21 +14,25 @@ class BlockingQueue{
      * @param val The data to push onto the queue
      */
     void Push(T& val){
+        static_assert(!std::is_same_v<int, T>);
         std::scoped_lock lock{m_lock};
         m_queue.push(val);
     };
 
     void Push(const T& val){
+        static_assert(!std::is_same_v<int, T>);
         std::scoped_lock lock{m_lock};
         m_queue.push(val);
     };
 
     void Push(T&& val){
+        static_assert(!std::is_same_v<int, T>);
         std::scoped_lock lock{m_lock};
         m_queue.push(val);
     };
 
     void Push(const T&& val){
+        static_assert(!std::is_same_v<int, T>);
         std::scoped_lock lock{m_lock};
         m_queue.push(val);
     };
@@ -47,7 +52,7 @@ class BlockingQueue{
     };
 
     /**
-     * @brief This will return the oldest value
+     * @brief This will return the oldest value. Small function so using implicit inlining.
      * @return True if the queue is empty
      */
     bool IsEmpty(){
@@ -59,3 +64,13 @@ class BlockingQueue{
         std::mutex m_lock;
         std::queue<T> m_queue;
 };
+
+//forward declare explicit specialization so the exe's can see them
+template<>
+void BlockingQueue<int>::Push(int& val);
+template<>
+void BlockingQueue<int>::Push(const int& val);
+template<>
+void BlockingQueue<int>::Push(int&& val);
+template<>
+void BlockingQueue<int>::Push(const int&& val);

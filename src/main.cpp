@@ -16,5 +16,12 @@ int main()
 
   std::cout << "Heres the element I pushed " << superFunInt << std::endl;
 
+  BlockingQueue<std::string> myFunStringQueue;
+  myFunStringQueue.Push("This is a string??");
+
+  std::string wowSoFun;
+  myFunStringQueue.Pop(wowSoFun);
+  std::cout << "My String is: " << wowSoFun << std::endl;
+
   return 0;
 }

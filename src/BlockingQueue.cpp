@@ -1,5 +1,4 @@
 #include "BlockingQueue.hpp"
-
 /**
  * @brief This inserts a single int onto the queue but flips its sign
  * @param val The data to push onto the queue
