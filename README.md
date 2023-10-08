@@ -10,7 +10,7 @@
         - Install the newest stable version of gcc and gdb
           - On my machine I had gcc 10 installed.
     - Git operations
-      - Grab testing framework from google: git submodule init --update
+      - Grab testing framework from google: git submodule update --init
     - How to build on linux/osx from bash/terminal
         1. mkdir build
         2. cd build
@@ -23,6 +23,9 @@
     - Options to run
       - Run binaries directly from build/bin
       - Run from vscode using gdb from the play button and add more launch options from .vscode/launch.json
+    - Generate documentation:
+      - doxygen doxyfile
+      - Edit the mainpage.md in order to change the homepage for your project the docs can be accessed with ./docs/html/index.html
 
 ## Project layout
     - .vscode/
@@ -35,3 +38,9 @@
       - Write all your code here. I usually throw main in here if its a small project. 
     - build/
       - This is where all the makefiles/obj files/executables are located
+
+## Resources
+CMake: https://cmake.org/
+GCC: https://gcc.gnu.org/
+C++: https://en.cppreference.com/w/
+Doxygen: https://www.doxygen.nl/
