@@ -44,3 +44,6 @@
 - GCC: https://gcc.gnu.org/
 - C++: https://en.cppreference.com/w/
 - Doxygen: https://www.doxygen.nl/
+- VSCode Extensions:
+  - C++ Extension Pack: https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
+  - Remote Development: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
