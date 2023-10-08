@@ -40,7 +40,7 @@
       - This is where all the makefiles/obj files/executables are located
 
 ## Resources
-CMake: https://cmake.org/
-GCC: https://gcc.gnu.org/
-C++: https://en.cppreference.com/w/
-Doxygen: https://www.doxygen.nl/
+- CMake: https://cmake.org/
+- GCC: https://gcc.gnu.org/
+- C++: https://en.cppreference.com/w/
+- Doxygen: https://www.doxygen.nl/
