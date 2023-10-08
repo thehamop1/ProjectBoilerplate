@@ -1,3 +1,4 @@
+#you can make functions in your build system
 macro(package_add_test TESTNAME SRCS LIB)
     add_executable(${TESTNAME} ${SRCS})
     target_link_libraries(${TESTNAME} gtest gmock gtest_main ${LIB})
@@ -9,4 +10,6 @@ macro(package_add_test TESTNAME SRCS LIB)
     set_target_properties(${TESTNAME} PROPERTIES FOLDER tests)
 endmacro()
 
+#Here im linking our library defined in src/ and the google test framework
+#You can add more tests with this line
 package_add_test(BlockingQueue BlockingQueue.cpp LIBRARY_NAME)

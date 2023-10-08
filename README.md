@@ -8,6 +8,7 @@
     - Packages to install on your computer
         - Install the newest version of cmake
         - Install the newest stable version of gcc and gdb
+          - On my machine I had gcc 10 installed.
     - Git operations
       - Grab testing framework from google: git submodule init --update
     - How to build on linux/osx from bash/terminal
