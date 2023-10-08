@@ -27,6 +27,7 @@
       - doxygen doxyfile
       - Edit the mainpage.md in order to change the homepage for your project the docs can be accessed with ./docs/html/index.html
     - CI support can be edited in the .github folder and will be run by github actions
+      - Your tests in tests/ will run on the server and you can check the actions tab for more info on what failed/passed
 
 ## Project layout
     - .vscode/
